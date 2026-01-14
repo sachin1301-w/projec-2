@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Animated Gradient Background */
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #1d2671, #c33764);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Glass texture */
+.container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  animation: slideDown 0.8s ease;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Result */
+#results {
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Guide */
+.guide {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
